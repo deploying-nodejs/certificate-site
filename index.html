@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificate</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="h-16 shadow flex items-center bg-gray-800">
+        <div class="container flex justify-between mx-auto px-4">
+            <span class="text-white uppercase font-medium">Wildcard Certificate</span>
+        </div>
+    </div>
+    <div class="container mx-auto flex justify-center">
+        <div class="max-w-sm">
+            <form action="/fullchain.pem" method="POST">
+                <button type="submit" class="mt-6 w-full inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out">
+                    Download fullchain.pem file
+                </button>
+            </form>
+
+            <form action="/privkey.pem" method="POST">
+                <button type="submit" class="mt-6 w-full inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out">
+                    Download privkey.pem file
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
